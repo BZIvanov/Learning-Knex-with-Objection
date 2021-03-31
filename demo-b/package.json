@@ -6,7 +6,8 @@
   "scripts": {
     "start": "nodemon",
     "migrate": "npx knex migrate:latest",
-    "seed": "npx knex seed:run"
+    "seed": "npx knex seed:run",
+    "down": "npx knex migrate:down"
   },
   "keywords": [],
   "author": "",
