@@ -13,3 +13,4 @@
 - basic usage of create table foreign key
 - data validation with objection jsonSchema
 - easier usage of knex commands as package.json commands
+- example how to alter table by adding more columns to a table
