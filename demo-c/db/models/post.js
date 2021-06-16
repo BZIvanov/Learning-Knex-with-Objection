@@ -20,6 +20,25 @@ class Post extends Model {
       },
     };
   }
+
+  static get relationMappings() {
+    const Comment = require('./comment');
+
+    return {
+      comments: {
+        relation: Model.ManyToManyRelation,
+        modelClass: Comment,
+        join: {
+          from: 'posts.id',
+          through: {
+            from: 'post_comments.post_id',
+            to: 'post_comments.comment_id',
+          },
+          to: 'comments.id',
+        },
+      },
+    };
+  }
 }
 
 module.exports = Post;
