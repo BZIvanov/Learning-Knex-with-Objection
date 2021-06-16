@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.get('/', async (req, res) => {
   try {
-    const postsComments = await Post.query().withGraphFetched('[comments]');
+    const postsComments = await Post.query().withGraphJoined('[comments]');
 
     res.status(200).json({ postsComments });
   } catch (err) {
