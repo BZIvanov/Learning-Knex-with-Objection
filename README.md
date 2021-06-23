@@ -14,3 +14,7 @@
 - data validation with objection jsonSchema
 - easier usage of knex commands as package.json commands
 - example how to alter table by adding more columns to a table
+
+### demo-c
+
+- example using 'through' when we work with 3rd table holding the foreign keys between other 2 tables
