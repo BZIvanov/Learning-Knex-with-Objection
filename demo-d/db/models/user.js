@@ -19,7 +19,10 @@ class User extends Model {
       properties: {
         id: { type: 'integer' },
         username: { type: 'string', minLength: 1, maxLength: 30 },
-        email: { type: 'string' },
+        email: {
+          type: 'string',
+          pattern: '^[A-Za-z0-9]+@[A-Za-z0-9]+.[a-z]{2,3}$',
+        },
         city: { type: ['string', null] },
       },
     };

@@ -15,3 +15,9 @@ Run the below to seed some dummy data:
 ```
 npm run seed
 ```
+
+To start the server run:
+
+```
+npm start
+```
