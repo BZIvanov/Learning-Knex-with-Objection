@@ -19,8 +19,12 @@ class User extends Model {
       properties: {
         id: { type: 'integer' },
         title: { type: 'string', minLength: 1, maxLength: 50 },
-        genre: { type: 'string' },
-        year: { type: 'integer' },
+        genre: { enum: ['action', 'comedy', 'fantasy'] },
+        year: {
+          type: 'integer',
+          minimum: 2000,
+          maximum: new Date().getFullYear(),
+        },
       },
     };
   }
