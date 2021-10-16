@@ -22,3 +22,4 @@
 ### demo-d
 
 - example using transactions
+- schema validations
